@@ -1,0 +1,128 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Kalnia:wght@200;300&family=Roboto:ital,wght@0,100;0,300;1,100&family=Rubik+Doodle+Shadow&family=Sevillana&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+}
+
+nav{  
+    background-color: rgb(6, 5, 5);
+    color: white;
+    height:40px;
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    padding:0 12px;
+    font-family: 'Bree Serif';
+}
+
+nav ul{
+list-style-type: none;
+}
+.gameContainer{
+    
+    display: flex;
+justify-content: center;
+margin-top: 50 px;
+}
+.container{
+    display:grid;
+    grid-template-columns: repeat(3,10vw);
+    grid-template-rows: repeat(3,10vw);
+    font-family:'Bree Serif';
+   
+    padding-top:40px;
+   
+
+}
+.box{
+    border:2px solid black;
+    font-size: 8vw;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.box:hover{
+    background-color: rgb(216, 214, 215);
+}
+.gameInfo{
+    padding: 0px 34px;
+    font-family: 'Roboto';
+
+}
+.info{
+    font-size: 25px;
+    margin-bottom :13px;
+    margin-top:13px;
+    padding-top: 15px;
+}
+.imgBox img{
+    width:0;
+    transition: width 1s  ease-in-out;
+
+}
+.br-0{
+    border-right: 0;
+}
+.bl-0{
+    border-left:0 ;
+}
+.bt-0{
+    border-top: 0;
+}
+.bb-0{
+    border-bottom: 0;
+
+}
+  
+#reset{
+    margin: 0 23px;
+    padding: 6px 14px;
+    background-color:  plum;
+    border-radius:6px;
+    cursor:pointer;
+    font-family:'Bree Serif';
+}
+
+h1{
+    
+    padding-top: 56px;
+    padding-bottom: 90px;
+   
+    
+}
+
+@media screen and (max-width: 950px) 
+{
+    .gameContainer {
+      flex-wrap: wrap;
+    }
+    .gameInfo{
+        margin-top: 34px;
+        
+    }
+    .gameInfo h1{
+        font-size: 2.5rem;
+    }
+    .container{
+        display:grid;
+        grid-template-columns: repeat(3,20vm);
+        grid-template-rows: repeat(3,20vm);
+    }
+
+} 
+
+
+.line{
+    padding-top: 3px;
+    background-color: black;
+    height:3px;
+    width:0;
+    position:absolute;
+    background-color: light purple;
+    transition: width 1s ease-in-out ;
+}
